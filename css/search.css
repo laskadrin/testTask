@@ -58,7 +58,7 @@ button{
 
 .list-item{
     border: none;
-    font-size: 150%;
+    font-size: 250%;
     height: 8%;
     background: none;
 }
@@ -67,9 +67,6 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-.list-item:focus{
-    outline: 3px solid black;
 }
 .sub-menu-right{
     display: flex;
@@ -83,6 +80,7 @@ button{
     background: none;
     margin: 3%;
     height: 10%;
+    transition: 0s;
 }
 .content{
     position: relative;
