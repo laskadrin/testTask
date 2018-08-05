@@ -199,7 +199,18 @@ button{
 }
 
 @media (max-width: 900px){
+    .content{
+        margin-left: 10%;
+    }
     .general{
+        width: 100%;
+    }
+    .side-menu{
+        width: auto;
+        position: absolute;
+        z-index: 2;
+    }
+    .sub-menu-right{
         width: 100%;
     }
     .influencer{
