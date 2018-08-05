@@ -31,6 +31,9 @@ body{
     margin-right: 1vw;
     margin-left: 1vw;
 }
+.notification{
+    font-size: 300%;
+}
 .dropdown-trigger{
     height: 105%;
 }
@@ -55,6 +58,8 @@ button{
 .list-item{
     border: none;
     background: none;
+    font-size: 150%;
+    height: 8%;
 }
 .sub-menu-left{
     display: flex;
