@@ -16,11 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-
+    
             <div class="header-nav">
                 <a class="header-item waves-effect waves-light "><img src="img/notification.png" alt="notifications" class="notification-icon"> </a>
-                <a class="header-item waves-effect waves-light mail-icon "><i class="fas fa-envelope"></i></a>
-                <a class="header-item waves-effect waves-light "><img src="img/settings.png" alt="settings" class="settings-icon"> </a>
                 <a class="waves-effect waves-light dropdown-trigger " data-target='profile-dropdown'><img src="img/profile-photo.jpg" alt="profile-photo" class="profile-nav"></a>
             </div>
             <ul id='profile-dropdown' class='dropdown-content'>
@@ -34,10 +32,10 @@
             </ul>
     <div class="main">
     <div class="side-menu grey lighten-1">
-
-
+        
+            
                 <div class="sub-menu-left">
-
+                    
                         <button id="dashboard-btn" class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-tachometer-alt"></i></button>
                         <button id="search-bar-btn" class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-search"></i></button>
                         <button id="other-btn" class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="far fa-envelope"></i></button>
@@ -62,8 +60,8 @@
                         <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
                         <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
                 </div>
-
-
+                    
+        
     </div>
     <div class="content">
             <div id="search-bar">
@@ -92,8 +90,8 @@
                             </div>
                             <div class="option">
                                 <label for="range" class="black-text">Followers</label>
-                                <p class="range-field">
-                                    <input type="range" name="range" min="0" max="100" />
+                                <p class="range-field white-text">
+                                    <input type="range" name="range" min="0" max="100" >
                                 </p>
                             </div>
                         </div>
@@ -146,14 +144,18 @@
                         </div>
                     </div>
                     <div class="links-list">
-                        <a href="" class="waves-light hoverable light-blue-text link"><i class="fas fa-envelope"></i></a>
-                        <a href="" class="waves-light hoverable red-text link"><i class="far fa-dot-circle"></i></a>
-                        <a href="" class="waves-light hoverable blue-text link"><i class="fas fa-eye"></i></a>
-                        <a href="" class="waves-light hoverable yellow-text link"><i class="fas fa-star"></i></a>
+                        <div class="main-links">
+                            <a href="" class="waves-light  light-blue-text link"><i class="fas fa-envelope"></i></a>
+                            <a href="" class="waves-light  red-text link"><i class="far fa-dot-circle"></i></a>
+                            <a href="" class="waves-light  blue-text link"><i class="fas fa-eye"></i></a>
+                            <a href="" class="waves-light  yellow-text link"><i class="fas fa-star"></i></a>
+                        </div>
                         <span>Other Channels:</span>
-                        <a href="" class="waves-light hoverable link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="" class="waves-light hoverable link"><i class="fab fa-twitter"></i></a>
-                        <a href="" class="waves-light hoverable link"><i class="fab fa-instagram"></i></a>
+                        <div>
+                            <a href="" class="waves-light  link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="waves-light  link"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="waves-light  link"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div><img src="img/area_graph.png" class="graphic" alt=""></div>
@@ -161,19 +163,19 @@
             <div class="divider"></div><div class="divider"></div>
             <ul class="pagination">
                     <li class="disabled"><a href="#!"><i class="fas fa-chevron-left"></i></a></li>
-                    <li class="active"><a href="#!">1</a></li>
+                    <li class="active deep-purple"><a href="#!">1</a></li>
                     <li class="waves-effect"><a href="#!">2</a></li>
                     <li class="waves-effect"><a href="#!">3</a></li>
                     <li class="waves-effect"><a href="#!">4</a></li>
                     <li class="waves-effect"><a href="#!">5</a></li>
                     <li><span>...</span></li>
                     <li class="waves-effect"><a href="#!">Last</a></li>
-                    <li class="waves-effect"><a href="#!"><i class="fas fa-chevron-right"></i></a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
                   </ul>
         </div>
 </div>
 <a href="index.html" class="btn-small grey to-admin">To admin page</a>
-
+        
 
 
 
@@ -187,6 +189,6 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/scripts.js"></script>
-
+      
 </body>
 </html>
