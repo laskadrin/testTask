@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+    <!--Import Google Icon Font-->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="css/search.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  >
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    
+            <div class="header-nav">
+                <a class="header-item waves-effect waves-light "><img src="img/notification.png" alt="notification" class="notification"> </a>
+                <a class="header-item waves-effect waves-light mail-icon "><i class="medium material-icons">mail</i></a>
+                <a class="header-item waves-effect waves-light "><img src="img/settings.png" alt="settings" class="settings"> </a>
+                <div class="header-item waves-effect waves-light dropdown-trigger " data-target='profile-dropdown'><img src="img/profile-photo.jpg" alt="profile-photo" class="profile-nav"></div>
+            </div>
+            <ul id='profile-dropdown' class='dropdown-content'>
+                <li><a href="#!" class="black-text">View profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#!" class="black-text">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#!" class="black-text">Help</a></li>
+                <li class="divider"></li>
+                <li><a href="#!" class="black-text">Logout</a></li>
+            </ul>
+    <div class="main">
+    <div class="side-menu grey lighten-1">
+        
+            
+                <div class="sub-menu-left">
+                    
+                    <button id="dashboard-btn" onclick="dashboard();return false"  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">image_aspect_ratio</i></button>
+                    <button id="other-btn" onclick="other();return false"  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">mail_outline</i></button>
+                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">gps_fixed</i></button>
+                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">people_outline</i></button>
+                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">credit_card</i></button>
+                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">trending_up</i></button>
+                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">settings</i></button>
+                        
+                </div>
+                <div id="dashboard" class="sub-menu-right">
+                        <button  class="black-text list-item-drop grey lighten-1 waves-effect waves-light hoverable col s10">Dashboard</button>
+                        <button  class="black-text list-item-drop grey lighten-1 waves-effect waves-light hoverable col s10">Campaigins</button>
+                        <button  class="black-text list-item-drop grey lighten-1 waves-effect waves-light hoverable col s10">Partnerships</button>
+                        <button  class="black-text list-item-drop grey lighten-1 waves-effect waves-light hoverable col s10">Payments</button>
+                        <button  class="black-text list-item-drop grey lighten-1 waves-effect waves-light hoverable col s10">Reports</button>
+                </div>
+                <div id="other" class="sub-menu-right">
+                        <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
+                        <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
+                        <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
+                        <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
+                        <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
+                </div>
+            
+        
+    </div>
+</div>
+        
+
+
+
+
+
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/admin.js"></script>
+      
+</body>
+</html>
