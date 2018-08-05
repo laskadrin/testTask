@@ -69,12 +69,7 @@ button{
 .list-item:focus{
     outline: 3px solid black;
 }
-#dashboard{
-    display: none;
-}
-#other{
-    display: none;
-}
+
 .sub-menu-right{
     display: flex;
     flex-direction: column;
@@ -202,4 +197,9 @@ button{
 }
 .member{
     margin-right: 2%;
+}
+.to-search{
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }

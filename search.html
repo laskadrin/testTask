@@ -12,17 +12,16 @@
     <!--Import materialize.css-->
     <link rel="stylesheet" href="css/search.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  >
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
     
             <div class="header-nav">
-                <a class="header-item waves-effect waves-light "><img src="img/notification.png" alt="notification" class="notification"> </a>
-                <a class="header-item waves-effect waves-light mail-icon "><i class="medium material-icons">mail</i></a>
-                <a class="header-item waves-effect waves-light "><img src="img/settings.png" alt="settings" class="settings"> </a>
-                <div class="header-item waves-effect waves-light dropdown-trigger " data-target='profile-dropdown'><img src="img/profile-photo.jpg" alt="profile-photo" class="profile-nav"></div>
+                <a class="header-item waves-effect waves-light "><img src="img/notification.png" alt="notifications" class="notification-icon"> </a>
+                <a class="header-item waves-effect waves-light mail-icon "><i class="fas fa-envelope"></i></a>
+                <a class="header-item waves-effect waves-light "><img src="img/settings.png" alt="settings" class="settings-icon"> </a>
+                <a class="waves-effect waves-light dropdown-trigger " data-target='profile-dropdown'><img src="img/profile-photo.jpg" alt="profile-photo" class="profile-nav"></a>
             </div>
             <ul id='profile-dropdown' class='dropdown-content'>
                 <li><a href="#!" class="black-text">View profile</a></li>
@@ -39,14 +38,15 @@
             
                 <div class="sub-menu-left">
                     
-                    <button id="dashboard-btn" onclick="dashboard();return false"  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">image_aspect_ratio</i></button>
-                    <button id="other-btn" onclick="other();return false"  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">mail_outline</i></button>
-                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">gps_fixed</i></button>
-                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">people_outline</i></button>
-                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">credit_card</i></button>
-                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">trending_up</i></button>
-                    <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="small material-icons">settings</i></button>
-                        
+                        <button id="dashboard-btn" class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-tachometer-alt"></i></button>
+                        <button id="search-bar-btn" class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-search"></i></button>
+                        <button id="other-btn" class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="far fa-envelope"></i></button>
+                        <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="far fa-dot-circle"></i></button>
+                        <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-handshake"></i></button>
+                        <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-wallet"></i></button>
+                        <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-chart-line"></i></button>
+                        <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-cog"></i></button>
+                        <button  class="black-text list-item grey lighten-1 waves-effect waves-light hoverable col s12"><i class="fas fa-power-off"></i></button>
                 </div>
                 <div id="dashboard" class="sub-menu-right">
                         <button  class="black-text list-item-drop grey lighten-1 waves-effect waves-light hoverable col s10">Dashboard</button>
@@ -62,10 +62,117 @@
                         <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
                         <button  class="black-text list-item-drop  grey lighten-1 waves-effect waves-light hoverable col s10">other</button>
                 </div>
-            
+                    
         
     </div>
+    <div class="content">
+            <div id="search-bar">
+                    <form class="search-form">
+                        <div class="search-input">
+                            <input type="text" placeholder="Input key words">
+                        </div>
+                        <div class="options">
+                            <div class="option">
+                                <label for="channel" class="black-text">Channel</label>
+                                <select class="browser-default" name="channel">
+                                    <option value="1" selected><i class="fab fa-youtube-square"></i>Youtube</option>
+                                    <option value="2">Option 1</option>
+                                    <option value="3">Option 2</option>
+                                    <option value="4">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="option">
+                                <label for="country" class="black-text">Country</label>
+                                <select class="browser-default" name="country">
+                                    <option value="1" selected>Poland</option>
+                                    <option value="2">Option 1</option>
+                                    <option value="3">Option 2</option>
+                                    <option value="4">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="option">
+                                <label for="range" class="black-text">Followers</label>
+                                <p class="range-field">
+                                    <input type="range" name="range" min="0" max="100" />
+                                </p>
+                            </div>
+                        </div>
+                        <a class="btn-large search-btn">Search  <i class="fas fa-search" style="font-size: 90%;"></i></a>
+                    </form>
+                </div>
+        <div class="page-content">
+            <div class="content-header">
+                <button class="deep-purple lighten-3 waves-effect waves-light btn export">Export CSV</button>
+                <span class="content-title">Influencers on Youtube</span>
+                <div class="sort">
+                    <select class="browser-default" name="sort">
+                        <option value="1" selected>Sort</option>
+                        <option value="2">Option 1</option>
+                        <option value="3">Option 2</option>
+                        <option value="4">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="divider"></div><div class="divider"></div>
+            <div class="influencer">
+                <div><img src="img/pew.jpg" class="photo" alt=""></div>
+                <div class="general">
+                    <a class="channel-link" href=""><b>Pew Die Pie</b>   <i class="youtube fab fa-youtube-square"></i></a>
+                    <div class="influencer-info">
+                        <div class="info-item">
+                            <span>Total followers</span>
+                            <span class="number">5400000</span>
+                        </div>
+                        <div class="info-item">
+                            <div>
+                                <span>Avg</span><br>
+                                <span>Views/Video</span>
+                            </div>
+                            <span class="number">200000</span>
+                        </div>
+                        <div class="info-item">
+                            <div>
+                                <span>Avg</span><br>
+                                <span>Likes/Video</span>
+                            </div>
+                            <span class="number">64000</span>
+                        </div>
+                        <div class="info-item">
+                            <div>
+                                <span>Avg</span><br>
+                                <span>Comments/Video</span>
+                            </div>
+                            <span class="number">10112</span>
+                        </div>
+                    </div>
+                    <div class="links-list">
+                        <a href="" class="waves-light hoverable light-blue-text link"><i class="fas fa-envelope"></i></a>
+                        <a href="" class="waves-light hoverable red-text link"><i class="far fa-dot-circle"></i></a>
+                        <a href="" class="waves-light hoverable blue-text link"><i class="fas fa-eye"></i></a>
+                        <a href="" class="waves-light hoverable yellow-text link"><i class="fas fa-star"></i></a>
+                        <span>Other Channels:</span>
+                        <a href="" class="waves-light hoverable link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="waves-light hoverable link"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="waves-light hoverable link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div><img src="img/area_graph.png" class="graphic" alt=""></div>
+            </div>
+            <div class="divider"></div><div class="divider"></div>
+            <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li><span>...</span></li>
+                    <li class="waves-effect"><a href="#!">Last</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                  </ul>
+        </div>
 </div>
+<a href="admin.html" class="btn-small grey to-admin">To admin page</a>
         
 
 
